@@ -12,7 +12,6 @@ export const BotaoStyle = styled(Button)`
   text-transform: uppercase;
   transition: background-color 0.3s ease;
   cursor: pointer;
-  margin-top: 1.5rem;
 
   &:hover {
     background-color: #0056b3;

@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Login from "../../pages/Login";
+import Comunidades from "../../pages/Comunidades";
 
 export const CommonPublicRoutes = ({
   HandledarkMode,
@@ -10,6 +11,7 @@ export const CommonPublicRoutes = ({
   return (
     <Routes>
       <Route path="/" element={<Login />} />
+      <Route path="/comunidades" element={<Comunidades />} />
     </Routes>
   );
 };
