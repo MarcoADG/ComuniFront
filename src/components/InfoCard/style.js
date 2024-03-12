@@ -7,9 +7,9 @@ export const InfoCardStyle = styled(Card)`
   align-items: center;
   flex-direction: column;
   background-color: var(--primario);
-  max-width: 42rem;
-  height: 19rem;
-  margin: 30px;
+  max-width: 50rem;
+  height: 12rem;
+  margin: 20px;
   @media screen and (max-width: 1024px) {
     height: 70%;
     width: 80%;
@@ -25,22 +25,25 @@ export const InfoCardStyle = styled(Card)`
   }
 
   .card-body {
-    margin: 20px;
+    margin: 10px 10px 10px 0px;
     padding: 10px;
-    max-height: 260px;
-    min-height: 260px;
+    max-height: 11rem;
+    min-height: 11rem;
+    min-width: 25rem;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5%;
     @media screen and (max-width: 1024px) {
-      height: 70%;
-      width: 80%;
+      margin: 10px 10px 10px 10px;
+      height: 20%;
+      width: 60%;
       max-height: 160px;
       min-height: 160px;
+      min-width: 15rem;
     }
   }
 
   .cardImg {
-    height: 19rem;
+    height: 12rem;
     border-radius: 10%;
     padding: 10px;
     @media screen and (max-width: 1024px) {

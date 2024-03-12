@@ -1,12 +1,13 @@
 import { React, useEffect, useState } from "react";
 import ContainerHeader from "../../components/ContainerHeader";
 import PageContainer from "../../components/PageContainer";
-import { PaginaComunidadeStyle } from "./style";
+import { PaginaReunioesStyle } from "./style";
 import InforCard from "../../components/InfoCard";
 import { Col, Row } from "react-bootstrap";
 import Botao from "../../components/Botao";
+import RegrasAccordion from "../../components/RegrasAccordion";
 
-export default function Comunidades() {
+export default function Reunioes() {
   const [data, setData] = useState([]);
   useEffect(() => {
     const dummyData = [
@@ -27,9 +28,10 @@ export default function Comunidades() {
   }, []);
 
   return (
-    <ContainerHeader titulo={"Comunidades"}>
+    <ContainerHeader titulo={"Reunioes"} Extra={true}>
       <PageContainer>
-        <PaginaComunidadeStyle>
+        <PaginaReunioesStyle>
+          <RegrasAccordion />
           <div className="containerScroll">
             <Row className="row2">
               {data.map((item) => (
@@ -42,7 +44,7 @@ export default function Comunidades() {
               ))}
             </Row>
           </div>
-        </PaginaComunidadeStyle>
+        </PaginaReunioesStyle>
       </PageContainer>
     </ContainerHeader>
   );

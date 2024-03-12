@@ -10,6 +10,8 @@ export default function ContainerHeader({
   decreaseFontSize,
   increaseFontSize,
   resetFontSize,
+  titulo,
+  Extra,
 }) {
   const [windowSize, setWindowSize] = useState(getWindowSize());
   const navigate = useNavigate();
@@ -43,6 +45,8 @@ export default function ContainerHeader({
           increaseFontSize={increaseFontSize}
           decreaseFontSize={decreaseFontSize}
           resetFontSize={resetFontSize}
+          titulo={titulo}
+          Extra={Extra}
         />
       </Row>
       <Row className="px-0">{children}</Row>

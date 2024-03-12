@@ -2,6 +2,17 @@
   background-color: var(--cor-fundo);
 }
 
+.headerExtra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  gap: 10px;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+
 .tituloComu {
   position: sticky;
   display: flex;

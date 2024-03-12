@@ -7,7 +7,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import { NavBarStyle } from "./style";
 import "./style.css";
 
-function Header() {
+function Header({ titulo, Extra }) {
   return (
     <div className="navbarContainer">
       <NavBarStyle expand="lg" className="bg-body-tertiary">
@@ -53,7 +53,18 @@ function Header() {
           </Navbar.Collapse>
         </Container>
       </NavBarStyle>
-      <h1 className="tituloComu">Comunidades</h1>
+      <h1 className="tituloComu">{titulo}</h1>
+      {Extra ? (
+        <>
+          <div className="headerExtra">
+            <Botao texto={"Inscrito?"} />
+            <Botao texto={"Adicionar"} />
+            <Botao texto={"Editar"} />
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
     </div>
   );
 }

@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
-export const PaginaComunidadeStyle = styled.div`
+export const PaginaReunioesStyle = styled.div`
   background-color: var(--cor-fundo);
   display: flex;
   justify-content: center;
   align-items: center;
   max-height: 100vh;
+  flex-direction: column;
 
   .row2 {
     margin-top: 100px;
